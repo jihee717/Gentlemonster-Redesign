@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+:root{
+  --white:#fff;
+  --black:#141516;
+  --light-color:rgb(134, 134, 139);
+  --box-shadow:0 .5rem 1.5rem rgba(43, 43, 43, 0.1);
+}
+*{
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+}
+/* header */
+.header{
+  position: fixed;
+  top:0; left: 0; right:0;
+  background: #fff;
+  padding:1rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+  color:var(--black);
+  font-size: 2.5rem;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+/* join */
+.join {
+    padding-top: 9rem;
+    padding-bottom: 20rem;
+    background: #fff;
+    text-align: center;
+    margin: auto;
+    width: 360px;
+  }
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.join_form{
+    width: 100%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+label{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+label::after {
+    /* margin: var(--label); */
+    content: "*";
+    color: #db2828;
+}
+input{
+    padding: 1rem;
+}
+input:last-child{
+    margin-bottom: 2rem;
+}
+.btn{
+    width: 50% !important;
+    float: left;
+    padding: 0.8rem 0 !important;
+}
+
+
+/* footer */
+.footer{
+    background-color: #eee;
+  }
+  .footer .box-container{
+    padding:3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+  }
+  
+  .footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size: 2.5rem;
+    color:var(--black);
+  }
+  
+  .footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size: 1.5rem;
+    color:var(--light-color);
+  }
+  
+  .footer .box-container .box a:hover{
+    color:var(--black);
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .footer .credit{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    color:var(--black);
+    padding:.5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .footer .credit span{
+    color:var(--light-color);
+  }
